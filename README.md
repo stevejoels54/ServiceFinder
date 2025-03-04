@@ -1,50 +1,134 @@
-# Welcome to your Expo app 👋
+# ServiceFinder App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+ServiceFinder is a React Native application built with Expo that allows users to search and find various service providers based on their categories and usernames.
 
-## Get started
+## Features
 
-1. Install dependencies
+- Search for service providers by username or category.
+- Instant filtering as you type.
+- Simple and user-friendly interface.
+
+## Screenshots
+
+<!-- ![Home Screen](./assets/screenshots/search1.png)
+![Search Screen](./assets/screenshots/search2.png) -->
+<img src="./assets/screenshots/search1.png" alt="Home Screen" width="300"/>
+<img src="./assets/screenshots/search2.png" alt="Search Screen" width="300"/>
+<img src="./assets/screenshots/search4.png" alt="Search Screen" width="300"/>
+
+## Get Started
+
+### Prerequisites
+
+Ensure you have the following installed on your machine:
+
+- [Node.js](https://nodejs.org/)
+- [Expo CLI](https://docs.expo.dev/get-started/installation/)
+
+### Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/stevejoels54/ServiceFinder.git
+   cd ServiceFinder
+   ```
+
+2. Install dependencies:
 
    ```bash
    npm install
    ```
 
-2. Start the app
+3. Start the development server:
 
    ```bash
-    npx expo start
+   npx expo start
    ```
 
-In the output, you'll find options to open the app in a
+4. Scan the QR code using the **Expo Go** app on your mobile device or run it on an emulator.
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## Project Structure
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+```
+ServiceFinder/
+├─ .expo/
+│  ├─ README.md
+│  ├─ devices.json
+│  └─ types/
+│     └─ router.d.ts
+├─ .gitignore
+├─ .vscode/
+│  └─ .react/
+├─ README.md
+├─ app/
+│  ├─ (tabs)/
+│  │  ├─ _layout.tsx
+│  │  ├─ about.tsx
+│  │  └─ index.tsx
+│  ├─ +not-found.tsx
+│  └─ _layout.tsx
+├─ app.json
+├─ assets/
+│  ├─ fonts/
+│  │  └─ SpaceMono-Regular.ttf
+│  ├─ images/
+│  │  ├─ adaptive-icon.png
+│  │  ├─ developer-avatar.png
+│  │  ├─ favicon.png
+│  │  ├─ icon.png
+│  │  ├─ partial-react-logo.png
+│  │  ├─ react-logo.png
+│  │  ├─ react-logo@2x.png
+│  │  ├─ react-logo@3x.png
+│  │  └─ splash-icon.png
+│  └─ screenshots/
+│     ├─ search1.png
+│     ├─ search2.png
+│     ├─ search3.png
+│     └─ search4.png
+├─ components/
+│  ├─ Collapsible.tsx
+│  ├─ ExternalLink.tsx
+│  ├─ HapticTab.tsx
+│  ├─ HelloWave.tsx
+│  ├─ ParallaxScrollView.tsx
+│  ├─ ThemedText.tsx
+│  ├─ ThemedView.tsx
+│  ├─ __tests__/
+│  │  ├─ ThemedText-test.tsx
+│  │  └─ __snapshots__/
+│  │     └─ ThemedText-test.tsx.snap
+│  └─ ui/
+│     ├─ IconSymbol.ios.tsx
+│     ├─ IconSymbol.tsx
+│     ├─ TabBarBackground.ios.tsx
+│     ├─ TabBarBackground.tsx
+│     └─ ThemedTouchableOpacity.tsx
+├─ constants/
+│  └─ Colors.ts
+├─ data/
+│  └─ SampleProviders.ts
+├─ expo-env.d.ts
+├─ hooks/
+│  ├─ useColorScheme.ts
+│  ├─ useColorScheme.web.ts
+│  └─ useThemeColor.ts
+├─ package-lock.json
+├─ package.json
+├─ scripts/
+│  └─ reset-project.js
+├─ tsconfig.json
+└─ types/
+   └─ ServiceProvider.tsx
 
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+## Author
 
-## Learn more
+- **Joel Steven Ssekyewa**
+- **GitHub:** [stevejoels54](https://github.com/stevejoels54)
 
-To learn more about developing your project with Expo, look at the following resources:
+## License
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
